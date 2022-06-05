@@ -8,19 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link href="styles.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Social proof section</title>
   </head>
 
-  <body>
+  <body class="grid">
     <main>
-      <div class="hero">
+      <div class="hero container">
         <h1 class="hero__heading">10,000+ of our users love our products.</h1>
 
         <p class="hero__text">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
         
         <ul class="ratings-list">
           <li class="ratings-list__item">
+            <span>
               <svg class="star-icon">
                 <desc>star</desc>
                 <use href="#star"></use>
@@ -41,65 +43,72 @@
                 <desc>star</desc>
                 <use href="#star"></use>
               </svg>
-            Rated 5 Stars in Reviews
+            </span>
+            <p>Rated 5 Stars in Reviews</p>
           </li>
           <li class="ratings-list__item">
-            <svg class="star-icon">
-              <desc>star</desc>
-              <use href="#star"></use>
-            </svg>
-            <svg class="star-icon">
-              <desc>star</desc>
-              <use href="#star"></use>
-            </svg>
-            <svg class="star-icon">
-              <desc>star</desc>
-              <use href="#star"></use>
-            </svg>
-            <svg class="star-icon">
-              <desc>star</desc>
-              <use href="#star"></use>
-            </svg>
-            <svg class="star-icon">
-              <desc>star</desc>
-              <use href="#star"></use>
-            </svg>
-            Rated 5 Stars in Report Guru
+            <span>
+              <svg class="star-icon">
+                <desc>star</desc>
+                <use href="#star"></use>
+              </svg>
+              <svg class="star-icon">
+                <desc>star</desc>
+                <use href="#star"></use>
+              </svg>
+              <svg class="star-icon">
+                <desc>star</desc>
+                <use href="#star"></use>
+              </svg>
+              <svg class="star-icon">
+                <desc>star</desc>
+                <use href="#star"></use>
+              </svg>
+              <svg class="star-icon">
+                <desc>star</desc>
+                <use href="#star"></use>
+              </svg>
+            </span>
+            <p>Rated 5 Stars in Report Guru</p>
           </li>
           <li class="ratings-list__item">
-            <svg class="star-icon">
-              <desc>star</desc>
-              <use href="#star"></use>
-            </svg>
-            <svg class="star-icon">
-              <desc>star</desc>
-              <use href="#star"></use>
-            </svg>
-            <svg class="star-icon">
-              <desc>star</desc>
-              <use href="#star"></use>
-            </svg>
-            <svg class="star-icon">
-              <desc>star</desc>
-              <use href="#star"></use>
-            </svg>
-            <svg class="star-icon">
-              <desc>star</desc>
-              <use href="#star"></use>
-            </svg>
-            Rated 5 Stars in BestTech
+            <span>
+              <svg class="star-icon">
+                <desc>star</desc>
+                <use href="#star"></use>
+              </svg>
+              <svg class="star-icon">
+                <desc>star</desc>
+                <use href="#star"></use>
+              </svg>
+              <svg class="star-icon">
+                <desc>star</desc>
+                <use href="#star"></use>
+              </svg>
+              <svg class="star-icon">
+                <desc>star</desc>
+                <use href="#star"></use>
+              </svg>
+              <svg class="star-icon">
+                <desc>star</desc>
+                <use href="#star"></use>
+              </svg>
+            </span>
+            <p>Rated 5 Stars in BestTech</p>
           </li>
         </ul>
       </div>
 
-      <div class="quotes">
+      <div class="quotes container">
         <figure class="quote">
           <figcaption>
             <a href="#" target="_blank" class="quote__link">
               <img src="images/image-colton.jpg" alt="View user profile for Colton Smith">
             </a>
-            <h2 class="quote__heading">Colton Smith</h2>
-            <h3 class="quote__sub-heading">Verified Buyer</h3>
+            <div class="quote__header">
+              <h2 class="quote__heading">Colton Smith</h2>
+              <h3 class="quote__sub-heading">Verified Buyer</h3>
+            </div>
           </figcaption>
           <blockquote>
             "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"
@@ -111,8 +120,10 @@
             <a href="#" target="_blank" class="quote__link">
               <img src="images/image-irene.jpg" alt="View user profile for Irene Roberts">
             </a>
-            <h2 class="quote__heading">Irene Roberts</h2>
-            <h3 class="quote__sub-heading">Verified Buyer</h3>
+            <div class="quote__header">
+              <h2 class="quote__heading">Irene Roberts</h2>
+              <h3 class="quote__sub-heading">Verified Buyer</h3>
+            </div>
           </figcaption>
           <blockquote>
             "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
@@ -124,8 +135,10 @@
             <a href="#" target="_blank" class="quote__link">
               <img src="images/image-anne.jpg" alt="View user profile for Anne Wallace">
             </a>
-            <h2 class="quote__heading">Anne Wallace</h2>
-            <h3 class="quote__sub-heading">Verified Buyer</h3>
+            <div class="quote__header">
+              <h2 class="quote__heading">Anne Wallace</h2>
+              <h3 class="quote__sub-heading">Verified Buyer</h3>
+            </div>
           </figcaption>
           <blockquote>
             "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"
@@ -135,7 +148,7 @@
     </main>
     <footer>
       <div class="attribution">
-        <p>Challenge by<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
         <p>Coded by <a href="https://github.com/a-woodworth" target="_blank">a-woodworth</a>.</p>
       </div>
     </footer>

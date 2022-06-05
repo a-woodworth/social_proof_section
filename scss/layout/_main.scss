@@ -2,3 +2,54 @@
 // Main - Hero & Star Rating Styles
 // ___________________________________________________________________
 
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+main {
+  margin-inline: 1.5rem;
+}
+
+.hero {
+  margin-bottom: 3.125rem;
+  padding-top: 5.125rem;
+  width: 100%;
+}
+
+.hero__text {
+  letter-spacing: -0.039375rem;
+  margin-bottom: 2.5rem;
+  max-width: 20rem;
+  text-align: center;
+}
+
+.star-icon {
+  height: 16px;
+  width: 17px;
+}
+
+.ratings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.ratings-list__item {
+  @include rounded(0.5rem);
+  background-color: $sugarplum;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ratings-list__item span {
+  padding-top: 1rem;
+}
+
+.ratings-list__item p {
+  @include text($text__default, $font-weight--bold, $dark-plum);
+  line-height: $line__rating;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+}
