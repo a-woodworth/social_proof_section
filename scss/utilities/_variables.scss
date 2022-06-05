@@ -1,0 +1,39 @@
+// ___________________________________________________________________
+// Global Config
+// ___________________________________________________________________
+
+//Font Stack
+$font-family--primary: 'League Spartan', sans-serif;
+
+// Font Weights
+$font-weight--bold: 700;
+$font-weight--medium: 500;
+$font-weight--regular: 400;
+
+// Colors
+$dark-plum: #{'hsl(300, 43%, 22%)'};
+$light-plum: #{'hsl(303, 10%, 53%)'};
+$rose: #{'hsl(333, 80%, 67%)'};
+$sugarplum: #{'hsl(300, 24%, 96%)'};
+$white: #{'hsl(0, 0%, 100%)'};
+
+// Color Usage
+$color-bg-main: $white;
+$color-bg-rating: $sugarplum;
+$color-bg-quote: $dark-plum;
+
+// Text
+$headingL: 3.25rem;
+$headingM: 2.5rem;
+$textS: 1.1875rem;
+$text__default: 1.0625rem;
+
+// Line Height
+$lineXL: 1.6;
+$lineL: 1.32;
+$lineM: 1.29;
+$lineS: 1.25;
+$lineXS: 1.16;
+$line__default: 1.08;
+
+// Breakpoints

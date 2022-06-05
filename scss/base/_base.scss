@@ -1,0 +1,55 @@
+// ___________________________________________________________________
+// Base Styles
+// ___________________________________________________________________
+
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1, 
+h2,
+h3, 
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $white;
+  font-family: $font-family--primary;
+}
+
+h1 {
+  @include text($headingM, $font-weight--bold, $dark-plum);
+  line-height: $lineS;
+}
+
+h2 {
+  @include text($text__default, $font-weight--bold, $white);
+  line-height: $line__default;
+}
+
+h3 {
+  @include text($text__default, $font-weight--regular, $rose);
+  line-height: $line__default;
+}
+
+p {
+  @include text($textS, $font-weight--medium, $light-plum);
+  line-height: $lineL;
+}
+
+ul {
+  list-style-type: none;
+}
