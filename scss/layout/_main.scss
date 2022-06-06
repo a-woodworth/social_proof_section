@@ -6,6 +6,7 @@
 @use '../utilities/mixins' as *;
 
 main {
+  grid-area: "main";
   margin-inline: 1.5rem;
 }
 
@@ -49,7 +50,25 @@ main {
 
   @media #{$brkpoint-md} {
     flex-basis: 50%;
-    max-width: 445px;
+    max-width: 27.8125rem;
+  }
+}
+
+.ratings-list li:first-child {
+  @media #{$brkpoint-md} {
+    align-self: flex-start;
+  }
+}
+
+.ratings-list li:nth-child(2) {
+  @media #{$brkpoint-md} {
+    align-self: center;
+  }
+}
+
+.ratings-list li:last-child {
+  @media #{$brkpoint-md} {
+    align-self: flex-end;
   }
 }
 
@@ -60,6 +79,9 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  @media #{$brkpoint-md} {
+    flex-direction: row;
+  }
 }
 
 .ratings-list__item span {
