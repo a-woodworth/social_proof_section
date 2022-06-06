@@ -12,29 +12,31 @@ $font-weight--regular: 400;
 
 // Colors
 $dark-plum: #{'hsl(300, 43%, 22%)'};
-$light-plum: #{'hsl(303, 10%, 53%)'};
-$rose: #{'hsl(333, 80%, 67%)'};
 $sugarplum: #{'hsl(300, 24%, 96%)'};
 $white: #{'hsl(0, 0%, 100%)'};
+$shadow: #{'hsla(0, 0%, 0%, 0.2)'};
 
 // Color Usage
 $color-bg-main: $white;
 $color-bg-rating: $sugarplum;
 $color-bg-quote: $dark-plum;
 
+// Changed colors from design spec to pass Accessibility Color Contrast Ratio
+$light-plum: #{'hsl(303, 10%, 48%)'};
+$rose: #{'hsl(333, 80%, 69%)'};
+
 // Text
 $headingL: 3.25rem;
 $headingM: 2.5rem;
 $textS: 1.1875rem;
+$textXS: 0.875rem;
 $text__default: 1.0625rem;
 
 // Line Height
-$lineXL: .8;
-$lineL: 1.31;
-$lineM: 1.29;
-$lineS: 1.25;
-$lineXS: 1.16;
-$line__rating: 0.9;
-$line__default: 1.08;
+$lineXL: 1.31;
+$lineL: 1.29;
+$lineM: 0.9;
+$lineS: 0.8;
 
 // Breakpoints
+$brkpoint-md: '(min-width: 68.75rem)';

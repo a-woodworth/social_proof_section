@@ -5,13 +5,9 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr, 4rem;
   min-height: 100vh;
-}
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // @media #{$brkpoint-md} {
+  //   grid-template-columns: repeat(3, 1fr);
+  // }
 }

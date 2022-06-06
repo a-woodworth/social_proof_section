@@ -34,19 +34,19 @@ body {
 h1 {
   @include text($headingM, $font-weight--bold, $dark-plum);
   letter-spacing: -0.089375rem;
-  line-height: $lineXL;
+  line-height: $lineS;
   margin-bottom: 1.125rem;
   text-align: center;
 }
 
 h2 {
   @include text($text__default, $font-weight--bold, $white);
-  line-height: $line__default;
+  line-height: $lineM;
 }
 
 h3 {
   @include text($text__default, $font-weight--regular, $rose);
-  line-height: $line__default;
+  line-height: $lineM;
 }
 
 p {

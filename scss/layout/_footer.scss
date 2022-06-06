@@ -12,7 +12,7 @@
   width: 100%;
 
   p {
-    @include text($text__default, $font-weight--medium, $dark-plum);
+    @include text($textXS, $font-weight--medium, $dark-plum);
   }
 
   a {

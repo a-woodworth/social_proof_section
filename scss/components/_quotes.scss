@@ -6,26 +6,33 @@
 @use '../utilities/mixins' as *;
 
 .quote {
-  @include rounded(8px);
+  @include rounded(0.5rem);
   background-color: $dark-plum;
   padding-inline: 2rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .quote figcaption {
   display: grid;
-  grid-template-columns: 40px 1fr;
-  column-gap: 20px;
-  padding-top: 40px;
+  grid-template-columns: 2.5rem 1fr;
+  column-gap: 1.4375rem;
+  padding-top: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .quote figcaption img {
   @include rounded(50%);
-  @include size($width: 40px);
+  @include size($width: 2.5rem);
+  box-shadow: inset 0 2px 4px $shadow;
+}
+
+.quote__heading {
+  margin-bottom: .25rem;
 }
 
 .quote blockquote {
-  color: $white;
-  padding-bottom: 35px;
+  @include text($size: $text__default, $color: $white);
+  letter-spacing: -0.01875rem;
+  padding-bottom: 2.1875rem;
 }
