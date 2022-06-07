@@ -77,6 +77,26 @@ blockquote {
   margin: 0;
 }
 
+@media (min-width: 68.75rem) {
+  .quotes {
+    display: flex;
+    height: 16.625rem;
+    gap: 30px;
+  }
+}
+
+.quotes li:first-child {
+  align-self: flex-start;
+}
+
+.quotes li:nth-child(2) {
+  align-self: center;
+}
+
+.quotes li:last-child {
+  align-self: flex-end;
+}
+
 .quote {
   border-radius: 0.5rem;
   background-color: hsl(300, 43%, 22%);

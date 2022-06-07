@@ -5,6 +5,26 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
+.quotes {
+    @media #{$brkpoint-md} {
+    display: flex;
+    height: 16.625rem;
+    gap: 30px;
+  }
+}
+
+.quotes li:first-child {
+  align-self: flex-start;
+}
+
+.quotes li:nth-child(2) {
+  align-self: center;
+}
+
+.quotes li:last-child {
+  align-self: flex-end;
+}
+
 .quote {
   @include rounded(0.5rem);
   background-color: $dark-plum;
