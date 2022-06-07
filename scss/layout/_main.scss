@@ -7,6 +7,10 @@
 
 main {
   margin-inline: 1.5rem;
+  @media #{$brkpoint-md} {
+    margin-inline: auto;
+    max-width: 1100px;
+  }
 }
 
 .hero {
@@ -16,6 +20,7 @@ main {
 
   @media #{$brkpoint-md} {
     display: flex;
+    margin-bottom: 4.5rem;
   }
 }
 
