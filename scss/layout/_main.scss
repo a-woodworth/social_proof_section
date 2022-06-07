@@ -6,7 +6,6 @@
 @use '../utilities/mixins' as *;
 
 main {
-  grid-area: "main";
   margin-inline: 1.5rem;
 }
 
@@ -31,11 +30,17 @@ main {
   margin: 0 auto 2.5rem auto;
   max-width: 20rem;
   text-align: center;
+
+  @media #{$brkpoint-md} {
+    margin: 0;
+    max-width: 27.8125rem;
+    text-align: left;
+  }
 }
 
 .star-icon {
-  height: 16px;
-  width: 17px;
+  height: 1rem;
+  width: 1.0625rem;
 }
 
 .hidden {
@@ -50,7 +55,6 @@ main {
 
   @media #{$brkpoint-md} {
     flex-basis: 50%;
-    max-width: 27.8125rem;
   }
 }
 
@@ -81,11 +85,19 @@ main {
   align-items: center;
   @media #{$brkpoint-md} {
     flex-direction: row;
+    justify-content: stretch;
+    padding: 1.25rem 0;
+    width: 27.8125rem;
   }
 }
 
 .ratings-list__item span {
   padding-top: 1rem;
+
+  @media #{$brkpoint-md} {
+    height: 1.0625rem;
+    padding: 0 2rem; 
+  }
 }
 
 .ratings-list__item p {
@@ -93,4 +105,8 @@ main {
   line-height: $lineM;
   padding-bottom: 1rem;
   padding-top: .5rem;
+
+  @media #{$brkpoint-md} {
+    padding: 0; 
+  }
 }

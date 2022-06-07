@@ -23,6 +23,11 @@ body {
   background-color: hsl(0, 0%, 100%);
   font-family: "League Spartan", sans-serif;
 }
+@media (min-width: 68.75rem) {
+  body {
+    background: url(images/bg-pattern-top-desktop.svg) left top no-repeat, url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+  }
+}
 
 h1 {
   font-size: 2.5rem;
@@ -32,6 +37,14 @@ h1 {
   line-height: 0.8;
   margin-bottom: 1.125rem;
   text-align: center;
+}
+@media (min-width: 68.75rem) {
+  h1 {
+    font-size: 3.25rem;
+    letter-spacing: 0.0125rem;
+    text-align: left;
+    max-width: 27.8125rem;
+  }
 }
 
 h2 {
@@ -102,12 +115,10 @@ blockquote {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 4rem;
-  grid-template-areas: "main" "footer";
   min-height: 100vh;
 }
 
 main {
-  grid-area: "main";
   margin-inline: 1.5rem;
 }
 
@@ -134,10 +145,17 @@ main {
   max-width: 20rem;
   text-align: center;
 }
+@media (min-width: 68.75rem) {
+  .hero__text {
+    margin: 0;
+    max-width: 27.8125rem;
+    text-align: left;
+  }
+}
 
 .star-icon {
-  height: 16px;
-  width: 17px;
+  height: 1rem;
+  width: 1.0625rem;
 }
 
 .hidden {
@@ -153,7 +171,6 @@ main {
 @media (min-width: 68.75rem) {
   .ratings-list {
     flex-basis: 50%;
-    max-width: 27.8125rem;
   }
 }
 
@@ -186,11 +203,20 @@ main {
 @media (min-width: 68.75rem) {
   .ratings-list__item {
     flex-direction: row;
+    justify-content: stretch;
+    padding: 1.25rem 0;
+    width: 27.8125rem;
   }
 }
 
 .ratings-list__item span {
   padding-top: 1rem;
+}
+@media (min-width: 68.75rem) {
+  .ratings-list__item span {
+    height: 1.0625rem;
+    padding: 0 2rem;
+  }
 }
 
 .ratings-list__item p {
@@ -201,9 +227,10 @@ main {
   padding-bottom: 1rem;
   padding-top: 0.5rem;
 }
-
-footer {
-  grid-area: "footer";
+@media (min-width: 68.75rem) {
+  .ratings-list__item p {
+    padding: 0;
+  }
 }
 
 .attribution {
