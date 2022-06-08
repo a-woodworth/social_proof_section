@@ -28,7 +28,7 @@ body {
 @media (min-width: 68.75rem) {
   body {
     background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
-    background-position: top -2.1875rem left, bottom -2.1875rem right;
+    background-position: top -2.1875rem left, bottom -1.1875rem right;
   }
 }
 
@@ -143,8 +143,12 @@ blockquote {
   color: hsl(0, 0%, 100%);
   letter-spacing: -0.01875rem;
   line-height: 1.29;
-  max-width: 17.75rem;
   padding-bottom: 2.1875rem;
+}
+@media (min-width: 68.75rem) {
+  .quote blockquote {
+    max-width: 17.75rem;
+  }
 }
 
 .grid {

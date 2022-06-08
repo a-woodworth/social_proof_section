@@ -63,6 +63,9 @@
   @include text($size: $text__default, $color: $white);
   letter-spacing: -0.01875rem;
   line-height: $lineL;
-  max-width: 17.75rem;
   padding-bottom: 2.1875rem;
+
+  @media #{$brkpoint-md} {
+    max-width: 17.75rem;
+  }
 }
