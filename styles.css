@@ -28,7 +28,7 @@ body {
 @media (min-width: 68.75rem) {
   body {
     background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
-    background-position: top -2.1875rem left, bottom -1.1875rem right;
+    background-position: top -3.5rem left, bottom right;
   }
 }
 
@@ -163,7 +163,7 @@ main {
 }
 @media (min-width: 68.75rem) {
   main {
-    margin-inline: auto;
+    margin: auto;
     max-width: 1100px;
   }
 }
@@ -177,6 +177,7 @@ main {
   .hero {
     display: flex;
     margin-bottom: 4.5rem;
+    padding-top: 0;
   }
 }
 
