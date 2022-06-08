@@ -34,7 +34,7 @@ body {
 
   @media #{$brkpoint-md} {
     background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
-    background-position: top -3.5rem left, bottom right;
+    background-position: top left, bottom right;
   }
 }
 
