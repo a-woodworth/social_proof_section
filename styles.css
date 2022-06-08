@@ -19,13 +19,16 @@ ul {
 }
 
 body {
-  background: url(images/bg-pattern-top-mobile.svg) left top no-repeat, url(images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
+  background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
   background-color: hsl(0, 0%, 100%);
   font-family: "League Spartan", sans-serif;
 }
 @media (min-width: 68.75rem) {
   body {
-    background: url(images/bg-pattern-top-desktop.svg) left top no-repeat, url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top -2.1875rem left, bottom -2.1875rem right;
   }
 }
 
@@ -34,15 +37,16 @@ h1 {
   font-weight: 700;
   color: hsl(300, 43%, 22%);
   letter-spacing: -0.089375rem;
-  line-height: 0.8;
+  line-height: 0.85;
   margin-bottom: 1.125rem;
   text-align: center;
 }
 @media (min-width: 68.75rem) {
   h1 {
-    font-size: 3.25rem;
-    letter-spacing: 0.0125rem;
+    font-size: 3.5rem;
+    letter-spacing: -0.125rem;
     text-align: left;
+    margin-bottom: 1.5rem;
     max-width: 27.8125rem;
   }
 }
@@ -139,14 +143,14 @@ blockquote {
   color: hsl(0, 0%, 100%);
   letter-spacing: -0.01875rem;
   line-height: 1.29;
-  max-width: 17.875rem;
+  max-width: 17.75rem;
   padding-bottom: 2.1875rem;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 4rem;
+  grid-template-rows: auto 2rem;
   min-height: 100vh;
 }
 
@@ -186,6 +190,7 @@ main {
 }
 @media (min-width: 68.75rem) {
   .hero__text {
+    line-height: 1.31;
     margin: 0;
     max-width: 27.8125rem;
     text-align: left;
@@ -210,6 +215,7 @@ main {
 @media (min-width: 68.75rem) {
   .ratings-list {
     flex-basis: 50%;
+    padding-top: 1.75rem;
   }
 }
 
@@ -275,7 +281,6 @@ main {
 .attribution {
   padding: 0.5rem 0;
   text-align: center;
-  height: 4rem;
   width: 100%;
 }
 .attribution p {

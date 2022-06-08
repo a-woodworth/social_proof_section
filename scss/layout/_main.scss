@@ -37,6 +37,7 @@ main {
   text-align: center;
 
   @media #{$brkpoint-md} {
+    line-height: $lineXL;
     margin: 0;
     max-width: 27.8125rem;
     text-align: left;
@@ -60,6 +61,7 @@ main {
 
   @media #{$brkpoint-md} {
     flex-basis: 50%;
+    padding-top: 1.75rem;
   }
 }
 
