@@ -30,7 +30,7 @@ Users should be able to:
 ![Mobile Sceenshot](/screenshots/social-proof-mobile-375px.png)
 
 ### Links
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/social-proof-section-responsive-design-with-flexbox-grid-sass-F6DSKCwBfd)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/social_proof_section/)
 
 ### Built with
